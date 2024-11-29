@@ -1,0 +1,13 @@
+[package]
+name = "server"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = { version = "0.7.9", features = ["macros"] }
+env_logger = "0.11.5"
+hyper = "1.5.1"
+serde = { version = "1.0.215", features = ["derive"] }
+serde_json = "1.0.133"
+tokio = { version = "1.41.1", features = ["rt-multi-thread", "macros"] }
+tower-http = { version = "0.6.2", features = ["cors"] }
